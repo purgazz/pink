@@ -1,0 +1,36 @@
+.main-nav {
+  .no-indents();
+  background-color: @bg-blue;
+
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  .reset-list();
+  text-align: center;
+}
+
+.main-nav__link {
+  .font-props(18px, 32px, bold);
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    background-color: transparent;
+  }
+
+  .main-nav__logo {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-nav__list {
+    width: 640px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  }

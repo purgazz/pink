@@ -1,0 +1,38 @@
+.page-header__logo {
+  padding: 21px 20px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  background-color: @bg-blue;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo {
+    width: 150px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}

@@ -1,0 +1,37 @@
+.effect {
+  display: none;
+}
+
+.effect__wrapper {
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: block;
+  }
+
+  .effect__wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .effect__content {
+    width: 310px;
+    padding-left: 310px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    background-color: @bg-gray;
+  }
+
+    .effect__wrapper {
+    width: 940px;
+  }
+
+  .effect__content {
+    width: 570px;
+    padding-left: 370px;
+  }
+}

@@ -2,33 +2,39 @@
 <html lang="ru">
 
 <head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="utf-8">
   <title>Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150px" height="100px"
-        alt="Приложение Пинк">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a>Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="photo.html">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="page-header__wrapper">
+      <div class="page-header__logo">
+        <a class="page-header__logo-link">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74px" height="23px"
+            alt="Приложение Пинк">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
@@ -37,31 +43,39 @@
     <section class="download">
       <h2 class="visually-hidden">Скачать приложение</h2>
       <div class="download__wrapper">
-        <b class="download__slogan">Взгляните на жизнь иначе!</b>
-        <a class="download__button button button--download" href="#">Скачать приложение</a>
-        <ul class="download__list">
-          <li class="download__item">
-            <a class="download__link download__link--itunes" href="https://www.apple.com/ru/itunes/">Скачать на
-              Itunes</a>
-          </li>
-          <li class="download__item">
-            <a class="download__link download__link--google" href="https://play.google.com/store?hl=ru">Скачать на
-              Google</a>
-          </li>
-          <li class="download__item">
-            <a class="download__link download__link--microsoft"
-              href="https://www.microsoft.com/ru-tm/store/b/home">Скачать на Microsoft</a>
-          </li>
-        </ul>
-        <p class="download__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="download__content">
+          <b class="download__slogan">Взгляните на жизнь иначе!</b>
+          <a class="download__button button button--download" href="#">Скачать приложение</a>
+          <ul class="download__list">
+            <li class="download__item">
+              <a class="download__link download__link--itunes" href="https://www.apple.com/ru/itunes/">Скачать на
+                Itunes</a>
+            </li>
+            <li class="download__item">
+              <a class="download__link download__link--google" href="https://play.google.com/store?hl=ru">Скачать на
+                Google</a>
+            </li>
+            <li class="download__item">
+              <a class="download__link download__link--microsoft"
+                href="https://www.microsoft.com/ru-tm/store/b/home">Скачать на Microsoft</a>
+            </li>
+          </ul>
+          <p class="download__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="promo">
+      <div class="promo__wrapper">
+        <h2 class="visually-hidden">Характеристики приложения</h2>
+        <b class="promo__slogan">Устали от серости мегаполиса?</b>
+        <b class="promo__slogan promo__slogan--lower">Нам есть, что вам предложить!</b>
       </div>
     </section>
 
     <section class="specifications">
       <div class="specifications__wrapper">
-        <h2 class="visually-hidden">Характеристики приложения</h2>
-        <b class="specifications__slogan">Устали от серости мегаполиса?</b>
-        <b class="specifications__slogan specifications__slogan--lower">Нам есть, что вам предложить!</b>
         <ul class="specifications__list">
           <li class="specifications__item">
             <h3 class="specifications__item-title">Поднимает настроение</h3>
@@ -79,7 +93,12 @@
               новых</p>
           </li>
         </ul>
-        <div class="effect specifications__effect">
+      </div>
+    </section>
+
+    <section class="effect">
+      <div class="effect__wrapper">
+        <div class="effect__content">
           <b class="effect__slogan">Эффект на 24 часа!</b>
           <p class="effect__desc">Британские ученые провели исследования и доказали, что положительный эффект от
             использования приложения длится целые сутки!</p>
@@ -92,7 +111,7 @@
       <div class="reviews__wrapper slider">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
+          <blockquote class="reviews__item reviews__item--active slider__item">
             <div class="reviews__author">
               <cite class="reviews__author-name">Николай Петров</cite>
               <span class="reviews__author-info">25 лет, водитель трамвая</span>
@@ -128,11 +147,11 @@
     </section>
 
     <section class="tariffs">
-      <div class="tariffs__wrapper">
+      <div class="table__wrapper">
         <h2 class="visually-hidden">Тарифы</h2>
-        <table class="tariffa__list">
+        <table class="tariffs__list">
           <tr>
-            <th>
+            <th class="tariffs__option-name">
             </th>
             <th class="tariffs__title">
               <b class="tariffs__title-name">База</b>
@@ -166,11 +185,11 @@
             <td class="tariffs__option-check tariffs__option-check--on">Комментарии</td>
           </tr>
         </table>
-        <div class="tariffs__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </div>
+      </div>
+      <div class="tariffs__wrapper tariffs__toggles slider__toggles">
+        <button class="slider__toggle" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
       </div>
     </section>
 
@@ -194,33 +213,37 @@
           </p>
         </div>
       </div>
-      <div class="contacts__map map">
+    </section>
 
-      </div>
+    <section class="map">
+      <iframe class="map__link" src="https://yandex.ru/map-widget/v1/-/CCQ3vNGUWB" frameborder="0"
+        allowfullscreen="true" style="position:relative;"></iframe>
     </section>
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo">
-      <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="150px" height="100px"
-        alt="Приложение Пинк">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146px" height="40px"
+          alt="Приложение Пинк">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
     </div>
   </footer>
 </body>

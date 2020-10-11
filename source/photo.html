@@ -2,215 +2,232 @@
 <html lang="ru">
 
 <head>
+  <link rel="stylesheet" href="css/style.css">
   <meta charset="utf-8">
   <title>Пинк</title>
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150px" height="100px"
-        alt="Приложение Пинк">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a>Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="page-header__wrapper">
+      <div class="page-header__logo">
+        <a class="page-header__logo-link">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74px" height="23px"
+            alt="Приложение Пинк">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main class="page-main">
-    <h1 class="page-main__title">Фотографии пользователей</h1>
-    <p class="page-main__desc">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-    </p>
+  <main class="inner-page">
+    <h1 class="inner-page__title">Фотографии пользователей</h1>
 
-    <section class="big-photo">
-      <a class="big-photo__link" href="#">
-        <img class="big-photo__link-image" src="http://placehold.it/150x100" width="150px" height="100px"
-          alt="Панорама дня">
-      </a>
-      <span class="big-photo__label">Панорама дня</span>
-      <div class="big-photo__desc photo-desc">
-        <p class="photo-desc__author">
-          <b class="photo-desc__author-name">Анна</b>
-          <span class="photo-desc__time">5 минут назад</span>
+    <div class="inner-page__container">
+      <div class="inner-page__wrapper">
+        <p class="inner-page__desc">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
+          ваших?
         </p>
-        <p class="photo-desc__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
-          перископе, задавайте свои
-          вопросы!</p>
-        <p class="photo-desc__like"><span class="photo-desc__heart">Лайк</span> Нравится: 215</p>
-      </div>
-    </section>
 
-    <section class="catalog">
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <img class="catalog__link-image" src="http://placehold.it/150x100" width="150px" height="100px"
-              alt="Панорама дня">
-          </a>
-          <div class="catalog__desc photo-desc">
-            <p class="photo-desc__author">
-              <b class="photo-desc__author-name">Левон</b>
-              <span class="photo-desc__time">5 часов назад</span>
-            </p>
-            <p class="photo-desc__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <p class="photo-desc__like"><span class="photo-desc__heart">Лайк</span> Нравится: 356</p>
+        <section class="catalog">
+          <div class="catalog__item--panorama">
+            <a class="catalog__link--panorama" href="#">
+              <img class="catalog__link-image--panorama" src="img/panorama-mobile@1x.jpg" width="320px" height="137px"
+                alt="Панорама дня">
+            </a>
+            <span class="catalog__label">Панорама дня</span>
+            <div class="catalog__desc--panorama">
+              <p class="catalog__author">
+                <b class="catalog__author-name">Анна</b>
+                <span class="catalog__time">5 минут назад</span>
+              </p>
+              <p class="catalog__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию
+                в
+                перископе, задавайте свои
+                вопросы!</p>
+              <p class="catalog__like--panorama">Нравится: 215</p>
+            </div>
           </div>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <img class="catalog__link-image" src="http://placehold.it/150x100" width="150px" height="100px"
-              alt="Панорама дня">
-          </a>
-          <div class="catalog__desc photo-desc">
-            <p class="photo-desc__author">
-              <b class="photo-desc__author-name">Антон</b>
-              <span class="photo-desc__time">12 часов назад</span>
-            </p>
-            <p class="photo-desc__text">Соседи будут рады!</p>
-            <p class="photo-desc__like"><span class="photo-desc__heart">Лайк</span> Нравится: 666</p>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <img class="catalog__link-image" src="http://placehold.it/150x100" width="150px" height="100px"
-              alt="Панорама дня">
-          </a>
-          <div class="catalog__desc photo-desc">
-            <p class="photo-desc__author">
-              <b class="photo-desc__author-name">Борис</b>
-              <span class="photo-desc__time">20 часов назад</span>
-            </p>
-            <p class="photo-desc__text">Вчера он на луну летал, сегодня в руки к нам попал.Здесь могла быть ваша цитата
-              о высоком и вечном.</p>
-            <p class="photo-desc__like"><span class="photo-desc__heart">Лайк</span> Нравится: 215</p>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <img class="catalog__link-image" src="http://placehold.it/150x100" width="150px" height="100px"
-              alt="Панорама дня">
-          </a>
-          <div class="catalog__desc photo-desc">
-            <p class="photo-desc__author">
-              <b class="photo-desc__author-name">Сергей</b>
-              <span class="photo-desc__time">25 часов назад</span>
-            </p>
-            <p class="photo-desc__text">Самая кубанская в мире!</p>
-            <p class="photo-desc__like"><span class="photo-desc__heart">Лайк</span> Нравится: 4</p>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <img class="catalog__link-image" src="http://placehold.it/150x100" width="150px" height="100px"
-              alt="Панорама дня">
-          </a>
-          <div class="catalog__desc photo-desc">
-            <p class="photo-desc__author">
-              <b class="photo-desc__author-name">Максим</b>
-              <span class="photo-desc__time">40 часов назад</span>
-            </p>
-            <p class="photo-desc__text">Где снег-то?</p>
-            <p class="photo-desc__like"><span class="photo-desc__heart">Лайк</span> Нравится: 150</p>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <img class="catalog__link-image" src="http://placehold.it/150x100" width="150px" height="100px"
-              alt="Панорама дня">
-          </a>
-          <div class="catalog__desc photo-desc">
-            <p class="photo-desc__author">
-              <b class="photo-desc__author-name">Надежда</b>
-              <span class="photo-desc__time">45 часов назад</span>
-            </p>
-            <p class="photo-desc__text">Всем GM и взаимные лайки!</p>
-            <p class="photo-desc__like"><span class="photo-desc__heart">Лайк</span> Нравится: 2560</p>
-          </div>
-        </li>
-      </ul>
-      <p class="catalog__slogan">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
-    </section>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a class="catalog__link" href="#">
+                <img class="catalog__link-image" src="img/photo-car-mobile@1x.jpg" width="280px" height="180px"
+                  alt="Белая машина">
+              </a>
+              <div class="catalog__desc">
+                <p class="catalog__author">
+                  <b class="catalog__author-name">Левон</b>
+                  <span class="catalog__time">5 часов назад</span>
+                </p>
+                <p class="catalog__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <p class="catalog__like">Нравится: 356</p>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link" href="#">
+                <img class="catalog__link-image" src="img/photo-drumset-mobile@1x.jpg" width="280px" height="180px"
+                  alt="Барабаны">
+              </a>
+              <div class="catalog__desc">
+                <p class="catalog__author">
+                  <b class="catalog__author-name">Антон</b>
+                  <span class="catalog__time">12 часов назад</span>
+                </p>
+                <p class="catalog__text">Соседи будут рады!</p>
+                <p class="catalog__like">Нравится: 666</p>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link" href="#">
+                <img class="catalog__link-image" src="img/photo-window-mobile@1x.jpg" width="280px" height="180px"
+                  alt="окно">
+              </a>
+              <div class="catalog__desc">
+                <p class="catalog__author">
+                  <b class="catalog__author-name">Борис</b>
+                  <span class="catalog__time">20 часов назад</span>
+                </p>
+                <p class="catalog__text">Здесь могла быть ваша цитата
+                  о высоком и вечном.</p>
+                <p class="catalog__like">Нравится: 215</p>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link" href="#">
+                <img class="catalog__link-image" src="img/photo-fair-mobile@1x.jpg" width="280px" height="180px"
+                  alt="бахча">
+              </a>
+              <div class="catalog__desc">
+                <p class="catalog__author">
+                  <b class="catalog__author-name">Сергей</b>
+                  <span class="catalog__time">25 часов назад</span>
+                </p>
+                <p class="catalog__text">Самая кубанская в мире!</p>
+                <p class="catalog__like">Нравится: 4</p>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link" href="#">
+                <img class="catalog__link-image" src="img/photo-pov-mobile@1x.jpg" width="280px" height="180px"
+                  alt="горы">
+              </a>
+              <div class="catalog__desc">
+                <p class="catalog__author">
+                  <b class="catalog__author-name">Максим</b>
+                  <span class="catalog__time">40 часов назад</span>
+                </p>
+                <p class="catalog__text">Где снег-то?</p>
+                <p class="catalog__like">Нравится: 150</p>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__link" href="#">
+                <img class="catalog__link-image" src="img/photo-wing-mobile@1x.jpg" width="280px" height="180px"
+                  alt="крыло">
+              </a>
+              <div class="catalog__desc">
+                <p class="catalog__author">
+                <b class="catalog__author-name">Надежда</b>
+                <span class="catalog__time">45 часов назад</span>
+                </p>
+                <p class="catalog__text">Всем GM и взаимные лайки!</p>
+                <p class="catalog__like"><span class="Нравится: 2560</p>
+              </div>
+            </li>
+          </ul>
+          <p class="catalog__slogan">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+        </section>
 
-    <section class="upload">
-      <div class="upload__wrapper">
-        <a class="upload__link" href="#">
-          <img class="upload__image" src="http://placehold.it/150x100" width="150px" height="100px" alt="Новое фото">
-        </a>
-        <div class="upload__filters-list">
-          <div class="upload__filters-item upload__filters-item--active">
-            <div class="upload__filters-icon upload__filters-icon--active">
-              <span>Обрезать</span>
-              <img class="upload__filters-image" src="http://placehold.it/150x100" width="150px" height="100px" alt="Обрезать">
+        <section class="upload">
+          <div class="upload__wrapper">
+            <a class="upload__link" href="#">
+              <img class="upload__image" src="img/photo-road-mobile@1x.jpg" width="280px" height="374px" alt="Новое фото">
+            </a>
+            <div class="upload__filters-list">
+              <div class="upload__filters-item upload__filters-item--active">
+                <div class="upload__filters-icon upload__filters-icon--active">
+                  <span>Обрезать</span>
+                  <img class="upload__filters-image" src="img/icon-editor-crop.svg" width="48px" height="48px"
+                    alt="Обрезать">
+                </div>
+                <div class="upload__range-controls">
+                  <div class="upload__scale"></div>
+                  <div class="upload__toggle"></div>
+                </div>
+              </div>
+              <div class="upload__filters-item">
+                <div class="upload__filters-icon">
+                  <span>Залить</span>
+                  <img class="upload__filters-image" src="http://placehold.it/150x100" width="150px" height="100px"
+                    alt="Залить">
+                </div>
+                <div class="upload__range-controls">
+                  <div class="upload__scale"></div>
+                  <div class="upload__toggle"></div>
+                </div>
+              </div>
+              <div class="upload__filters-item">
+                <div class="upload__filters-icon">
+                  <span>Яркость</span>
+                  <img class="upload__filters-image" src="http://placehold.it/150x100" width="150px" height="100px"
+                    alt="Яркость">
+                </div>
+                <div class="upload__range-controls">
+                  <div class="upload__scale"></div>
+                  <div class="upload__toggle"></div>
+                </div>
+              </div>
             </div>
-            <div class="upload__range-controls">
-              <div class="upload__scale"></div>
-              <div class="upload__toggle"></div>
+            <div class="upload__buttons">
+              <button class="upload__button-post button button--post" type="button">Запостить</button>
+              <button class="upload__button-cancel button button--cancel">Отмена</button>
             </div>
           </div>
-          <div class="upload__filters-item">
-            <div class="upload__filters-icon">
-              <span>Залить</span>
-              <img class="upload__filters-image" src="http://placehold.it/150x100" width="150px" height="100px" alt="Залить">
-            </div>
-            <div class="upload__range-controls">
-              <div class="upload__scale"></div>
-              <div class="upload__toggle"></div>
-            </div>
-          </div>
-          <div class="upload__filters-item">
-            <div class="upload__filters-icon">
-              <span>Яркость</span>
-              <img class="upload__filters-image" src="http://placehold.it/150x100" width="150px" height="100px" alt="Яркость">
-            </div>
-            <div class="upload__range-controls">
-              <div class="upload__scale"></div>
-              <div class="upload__toggle"></div>
-            </div>
-          </div>
-        </div>
-        <div class="upload__buttons">
-          <button class="upload__button-post button button--post" type="button">Запостить</button>
-          <button class="upload__button-cancel button button--cancel">Отмена</button>
-        </div>
+        </section>
       </div>
-    </section>
+    </div>
+
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo">
-      <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="150px" height="100px"
-        alt="Приложение Пинк">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146px" height="40px"
+          alt="Приложение Пинк">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
     </div>
   </footer>
 </body>

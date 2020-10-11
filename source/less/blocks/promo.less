@@ -1,0 +1,35 @@
+.promo {
+  background-color: #ffffff;
+}
+
+.promo__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.promo__slogan {
+  display: block;
+  .font-props(24px, 30px, 300);
+}
+
+@media (min-width: @tablet-width) {
+  .promo__wrapper {
+    width: 620px;
+  }
+
+  .promo__slogan {
+    .font-props(40px, 48px, 300);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__wrapper {
+    width: 940px;
+  }
+
+  .promo__slogan {
+    .font-props(50px, 60px, 300);
+  }
+}
