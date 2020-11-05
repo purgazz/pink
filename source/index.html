@@ -10,31 +10,50 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <div class="page-header__logo">
-        <a class="page-header__logo-link">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74px" height="23px"
-            alt="Приложение Пинк">
-        </a>
-        <button class="page-header__toggle" type="button">Открыть меню</button>
-      </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <a class="main-nav__logo">
+        <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="74px" height="23px"
+          alt="Приложение Пинк">
+      </a>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span><svg
+          class="main-nav__open-toggle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px"
+          viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+          <g id="miu">
+            <g id="editor_list_view_hambuger_menu_glyph">
+              <g>
+                <path id="path-1" fill="#ffffff"
+                  d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z" />
+              </g>
+              <g>
+                <path id="path-1_1_" fill="#ffffff"
+                  d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z" />
+              </g>
+            </g>
+          </g>
+        </svg>
+        <svg class="main-nav__close-toggle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px"
+          viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+          <path fill="#FFFFFF"
+            d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z" />
+        </svg>
+      </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main class="page-main">
@@ -45,22 +64,27 @@
       <div class="download__wrapper">
         <div class="download__content">
           <b class="download__slogan">Взгляните на жизнь иначе!</b>
-          <a class="download__button button button--download" href="#">Скачать приложение</a>
+          <a class="download__button rounded-button rounded-button--download" href="#">Скачать приложение</a>
           <ul class="download__list">
             <li class="download__item">
-              <a class="download__link download__link--itunes" href="https://www.apple.com/ru/itunes/">Скачать на
-                Itunes</a>
+              <a class="download__link download__link--itunes" href="https://www.apple.com/ru/itunes/"><img
+                  src="img/logo-apple.svg" alt="Itunes" width="46px" height="57px"><span class="visually-hidden">Скачать
+                  на
+                  Itunes</span></a>
             </li>
             <li class="download__item">
-              <a class="download__link download__link--google" href="https://play.google.com/store?hl=ru">Скачать на
-                Google</a>
+              <a class="download__link download__link--google" href="https://play.google.com/store?hl=ru"><img
+                  src="img/logo-android.svg" alt="Google" width="42px" height="47px"><span
+                  class="visually-hidden">Скачать на
+                  Google</span></a>
             </li>
             <li class="download__item">
               <a class="download__link download__link--microsoft"
-                href="https://www.microsoft.com/ru-tm/store/b/home">Скачать на Microsoft</a>
+                href="https://www.microsoft.com/ru-tm/store/b/home"><img src="img/logo-microsoft.svg" alt="Microsoft"
+                  width="44px" height="42px"><span class="visually-hidden">Скачать на Microsoft</span></a>
             </li>
           </ul>
-          <p class="download__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <p class="download__desc">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
         </div>
       </div>
     </section>
@@ -70,24 +94,29 @@
       <div class="promo__wrapper">
         <h2 class="visually-hidden">Характеристики приложения</h2>
         <b class="promo__slogan">Устали от серости мегаполиса?</b>
-        <b class="promo__slogan promo__slogan--lower">Нам есть, что вам предложить!</b>
+        <b class="promo__slogan">Нам есть, что вам<br> предложить!</b>
       </div>
     </section>
 
     <section class="specifications">
+      <svg class="specifications__triangle triangle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="94.074px"
+        viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
+        <polygon fill="#000000" points="1200,0 0,0 0,94.074 " />
+      </svg>
       <div class="specifications__wrapper">
         <ul class="specifications__list">
-          <li class="specifications__item">
+          <li class="specifications__item specifications__item--mood">
             <h3 class="specifications__item-title">Поднимает настроение</h3>
             <p class="specifications__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
               несколько кликов!</p>
           </li>
-          <li class="specifications__item">
+          <li class="specifications__item specifications__item--change">
             <h3 class="specifications__item-title">Меняет мир вокруг</h3>
             <p class="specifications__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
               усилить эффект</p>
           </li>
-          <li class="specifications__item">
+          <li class="specifications__item specifications__item--friends">
             <h3 class="specifications__item-title">Заводит новых друзей</h3>
             <p class="specifications__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
               новых</p>
@@ -98,6 +127,15 @@
 
     <section class="effect">
       <div class="effect__wrapper">
+        <div class="effect__clock">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="298px" height="345.097px" viewBox="0 0 298 345.097"
+            enable-background="new 0 0 298 345.097" xml:space="preserve">
+            <path
+              d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z" />
+          </svg>
+        </div>
+
         <div class="effect__content">
           <b class="effect__slogan">Эффект на 24 часа!</b>
           <p class="effect__desc">Британские ученые провели исследования и доказали, что положительный эффект от
@@ -108,6 +146,19 @@
     </section>
 
     <section class="reviews">
+      <svg class="reviews__quotes" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="78.672px" height="63.789px"
+        viewBox="0 0 78.672 63.789" enable-background="new 0 0 78.672 63.789" xml:space="preserve">
+        <g>
+          <path
+            d="M34.967,7.063L30.713,0C28.272,1.495,0,12.207,0,39.617c0,7.231,0.336,24.172,18.9,24.172 c11.187,0,13.94-10.279,13.94-13.584c0-21.977-21.382-14.177-21.382-14.177C11.458,17.957,31.263,9.184,34.967,7.063z" />
+        </g>
+        <g>
+          <path
+            d="M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z" />
+        </g>
+      </svg>
+
       <div class="reviews__wrapper slider">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__list slider__list">
@@ -139,7 +190,7 @@
           <button class="reviews__next" type="button">Следующий отзыв</button>
         </div>
         <div class="reviews__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle slider__toggle--active" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
         </div>
@@ -147,7 +198,12 @@
     </section>
 
     <section class="tariffs">
-      <div class="table__wrapper">
+      <svg class="tariffs__triangle triangle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="94.074px"
+        viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
+        <polygon fill="#000000" points="1200,0 0,0 0,94.074 " />
+      </svg>
+      <div class="tariffs__wrapper">
         <h2 class="visually-hidden">Тарифы</h2>
         <table class="tariffs__list">
           <tr>
@@ -186,9 +242,9 @@
           </tr>
         </table>
       </div>
-      <div class="tariffs__wrapper tariffs__toggles slider__toggles">
+      <div class="tariffs__toggles slider__toggles">
         <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle slider__toggle--active" type="button">2</button>
         <button class="slider__toggle" type="button">3</button>
       </div>
     </section>
@@ -203,9 +259,9 @@
             <b class="contacts__title">Звоните:</b>
             <span class="contacts__text">+7 (812) 555-66-66</span>
           </p>
-          <p class="contacts__block">
+          <p class="contacts__block contacts__block--email">
             <b class="contacts__title">Пишите:</b>
-            <span class="contacts__text">mail@htmlacademy.ru</span>
+            <span class="contacts__text contacts__text--email">mail@htmlacademy.ru</span>
           </p>
           <p class="contacts__block">
             <b class="contacts__title">Приезжайте в гости:</b>
@@ -216,6 +272,12 @@
     </section>
 
     <section class="map">
+      <svg class="map__triangle triangle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="61.905px"
+        viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve">
+        <polygon fill="#000000" points="297.64,61.905 0,0 595.28,0 " />
+      </svg>
+
       <iframe class="map__link" src="https://yandex.ru/map-widget/v1/-/CCQ3vNGUWB" frameborder="0"
         allowfullscreen="true" style="position:relative;"></iframe>
     </section>
@@ -246,6 +308,24 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+
+  </script>
 </body>
 
 </html>

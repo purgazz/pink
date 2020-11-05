@@ -2,36 +2,117 @@
   display: none;
 }
 
-.effect__wrapper {
-}
-
 @media (min-width: @tablet-width) {
   .effect {
     display: block;
+    padding-top: 60px;
   }
 
   .effect__wrapper {
-    width: 620px;
+    display: flex;
+    position: relative;
+    max-width: 940px;
     margin: 0 auto;
+    padding: 0 3%;
   }
 
   .effect__content {
-    width: 310px;
-    padding-left: 310px;
+    min-width: 50%;
+    max-width: 520px;
+    margin-left: auto;
+    padding-top: 35px;
+  }
+
+  .effect__clock {
+    position: relative;
+    width: 240px;
+    height: 276px;
+    margin-right: 70px;
+    &::before {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 20px;
+      content: "24";
+      width: 175px;
+      height: 165px;
+      padding-top: 10px;
+      border: 13px solid @pink;
+      border-radius: 50%;
+      .font-props(96px, 150px, 700);
+      color: @pink;
+      text-align: center;
+    }
+  }
+
+  .effect__clock svg {
+    width: 240px;
+    height: 276px;
+  }
+
+  .effect__clock path {
+    fill: #dedede;
+  }
+
+  .effect__slogan {
+    display: block;
+    margin-bottom: 10px;
+    padding-right: 130px;
+    .font-props(30px, 36px, 700);
+    color: #000000;
+  }
+
+  .effect__desc {
+    .no-indents();
+    .font-props(14px, 24px, 400);
+  }
+
+  .effect__link {
+    .font-props(14px, 24px, 400);
+    color: @pink;
   }
 }
 
 @media (min-width: @desktop-width) {
   .effect {
+    padding-top: 90px;
     background-color: @bg-gray;
   }
 
-    .effect__wrapper {
-    width: 940px;
+  .effect__wrapper {
+  }
+
+  .effect__clock {
+    top: -90px;
+    width: 300px;
+    height: 345px;
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 23px;
+      content: "24";
+      width: 220px;
+      height: 210px;
+      padding-top: 10px;
+      border: 17px solid @pink;
+      border-radius: 50%;
+      .font-props(120px, 187px, 700);
+      color: @pink;
+      text-align: center;
+    }
+  }
+
+  .effect__clock svg {
+    width: 300px;
+    height: 345px;
   }
 
   .effect__content {
-    width: 570px;
-    padding-left: 370px;
+    margin-right: 50px;
+  }
+
+  .effect__desc,
+  .effect__link {
+    .font-props(18px, 30px, 400);
   }
 }
