@@ -47,8 +47,7 @@
   .no-indents();
 }
 
-.reviews__prev,
-.reviews__next {
+.reviews__button {
   display: none;
 }
 
@@ -104,8 +103,10 @@
   }
 
   .reviews__list {
+    position: relative;
     width: 690px;
     margin-bottom: 0;
+    padding: 0 125px;
   }
 
   .reviews__author-name {
@@ -118,5 +119,33 @@
 
   .reviews__toggles {
     display: none;
+  }
+
+  .reviews__button {
+    position: absolute;
+    top: 25px;
+    display: block;
+    padding: 0;
+    border: none;
+    background: none;
+    opacity: 0.3;
+    &--prev {
+      left: 0;
+    }
+    &--next {
+      right: 0;
+    }
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .reviews__button-icon {
+    & path {
+      fill: @bg-blue;
+    }
   }
 }

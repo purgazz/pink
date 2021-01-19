@@ -9,12 +9,18 @@
   padding: 22px 20px;
   padding-bottom: 21px;
   border-bottom: 1px solid #000000;
+  cursor: pointer;
 }
 
-.main-nav__logo-image {
-  display: block;
-  width: 74px;
-  height: 23px;
+.main-nav__logo-image:hover path {
+  fill: @pink;
+}
+
+.main-nav__logo-image:active {
+  opacity: 0.3;
+  & path {
+    fill: #ffffff;
+  }
 }
 
 .main-nav__toggle {

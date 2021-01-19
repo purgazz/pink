@@ -1,0 +1,39 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  height: 35px;
+  margin: 0 auto;
+}
+
+.copyright__link {
+  width: 27px;
+  height: 34px;
+  &:hover path {
+    fill: @bg-blue;
+  }
+  &:active svg {
+    opacity: 0.3;
+  }
+}
+
+.copyright__link-icon path {
+  fill: @pink;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__text {
+    .font-props(14px, 18px, 400);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    width: 152px;
+  }
+
+  .copyright__text {
+    font-size: 18px;
+  }
+}
