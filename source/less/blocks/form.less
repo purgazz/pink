@@ -1,0 +1,391 @@
+.form {
+  padding-top: 50px;
+  background-color: #ffffff;
+}
+
+.form__fieldset,
+.form__submit-box,
+.form__desc {
+  width: 280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.form__desc {
+  text-align: center;
+  & span {
+    display: none;
+  }
+}
+
+.form__inner {
+  padding: 40px 0;
+  &--gray {
+    background-color: @bg-gray;
+  }
+}
+
+.form__fieldset {
+  padding: 0;
+  border: none;
+}
+
+.form__input-group {
+  margin-bottom: 15px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__legend {
+  margin-bottom: 40px;
+  .font-props(14px, 18px, 400);
+  text-transform: uppercase;
+  color: @pink;
+  text-align: center;
+  &--contacts {
+    display: none;
+  }
+}
+
+.form__label-text {
+  display: block;
+  padding: 5px 25px;
+  .font-props(14px, 30px, 400);
+  text-transform: uppercase;
+  color: @pink;
+}
+
+.form__input-text {
+  width: 100%;
+  padding: 15px 20px;
+  .font-props(18px, 30px, 400);
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  box-sizing: border-box;
+  outline: none;
+  &:hover {
+    border-color: @bg-blue;
+  }
+  &:active,
+  &:focus {
+    border-color: @pink;
+  }
+}
+
+.form__check {
+  position: relative;
+  display: block;
+  margin-bottom: 45px;
+  padding: 5px;
+  padding-left: 70px;
+  .font-props(18px, 30px, 400);
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+  }
+  &::after {
+    display:none;
+    position: absolute;
+    top: 11px;
+    left: 9px;
+    content: "";
+    width: 20px;
+    height: 8px;
+    border: 2px solid @pink;
+    border-right: none;
+    border-top: none;
+    transform: rotate(-45deg);
+  }
+  &--radio {
+    margin-bottom: 35px;
+    &:last-of-type {
+      margin-bottom: 55px;
+    }
+    &::before {
+      border-radius: 50%;
+    }
+    &::after {
+      top: 12px;
+      left: 12px;
+      width: 16px;
+      height: 16px;
+      border: none;
+      border-radius: 50%;
+      transform: none;
+      background-color: @pink;
+
+    }
+  }
+  &:hover {
+    &::before {
+      border-color: @bg-blue;
+    }
+  }
+  &:active {
+    &::before {
+      border-color: @pink;
+    }
+  }
+}
+
+input:focus + .form__check::before {
+  border-color: @pink;
+}
+
+input:checked + .form__check::after {
+  display: block;
+}
+
+.form__comment {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  .font-props(18px, 30px, 400);
+  color: @bg-blue;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+}
+
+.form__submit-box {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.form__submit {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: #2aab6d;
+  border: none;
+  .font-props(18px, 30px, 700);
+  text-transform: uppercase;
+  color: #ffffff;
+  &:hover {
+    background-color: #1c9b5e;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}
+
+.form__prompt {
+  .font-props(14px, 30px, 400);
+  text-transform: uppercase;
+}
+
+.form__star {
+  color: @pink;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    padding-top: 95px;
+  }
+
+  .form__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__inner--application {
+    order: 2;
+  }
+
+  .form__inner--contacts {
+    order: 3;
+  }
+
+  .form__inner--achiv {
+    order: 4;
+  }
+
+  .form__inner {
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+  .form__desc {
+    width: 620px;
+    margin-bottom: 75px;
+    padding: 0 65px;
+    & span {
+      display: inline;
+    }
+  }
+
+  .form__fieldset {
+    width: auto;
+    padding: 0 60px;
+    border: 2px solid #e5e5e5;
+    &--fullname {
+      padding: 0;
+      border: none;
+    }
+    &--contacts {
+      padding-bottom: 30px;
+    }
+  }
+
+  .form__legend {
+    display: block;
+    margin: 0;
+    margin-bottom: 45px;
+    padding: 0 25px;
+    &--contacts,
+    &--comment {
+      margin-bottom: 35px;
+    }
+    &--achiv br {
+      display: none;
+    }
+  }
+
+  .form__input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    &--contacts {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      margin-bottom: 30px;
+    }
+  }
+
+  .form__input-text {
+    &--contacts {
+      margin-bottom: 10px;
+      border-right-width: 62px;
+    }
+  }
+
+  .form__label-text {
+    padding: 0;
+    margin-right: 20px;
+    &--contacts {
+      margin-left: 20px;
+    }
+  }
+
+  .form__input-icon {
+    position: absolute;
+    &--phone {
+      top: 22px;
+      right: 22px;
+    }
+    &--email {
+      top: 25px;
+      right: 23px;
+    }
+    & path {
+      fill: @pink;
+    }
+  }
+
+  .form__check {
+    padding-left: 60px;
+  }
+
+  .form__comment {
+    height: 190px;
+    margin-bottom: 45px;
+  }
+
+  .form__submit-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 620px;
+    margin-bottom: 50px;
+  }
+
+  .form__submit {
+    width: 300px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__desc {
+    width: 940px;
+    padding: 0 90px;
+  }
+
+  .form__wrapper {
+    width: 940px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__inner {
+    width: 940px;
+    &--fullname {
+      width: 435px;
+      margin-right: 70px;
+    }
+    &--application {
+      width: 435px;
+    }
+  }
+
+  .form__fieldset {
+    &--fullname {
+      padding-top: 10px;
+    }
+    &--application {
+      padding: 0 30px;
+    }
+    &--contacts {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 15px;
+    }
+    &--achiv {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .form__input-group {
+    &--fullname {
+      margin-bottom: 53px;
+    }
+    &--contacts {
+      width: 375px;
+      margin: 0;
+    }
+  }
+
+  .form__check {
+    &:last-of-type {
+      margin-bottom: 55px;
+    }
+    &--radio {
+      margin-left: 45px;
+    }
+  }
+
+  .form__comment {
+    height: 130px;
+    margin-bottom: 35px;
+  }
+
+  .form__submit-box {
+    width: 940px;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,33 @@
+.map {
+  position: relative;
+}
+
+.map__triangle {
+  z-index: 2;
+  top: 0;
+}
+
+.map__link {
+  width:100%;
+  height: 200px;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    height: 370px;
+  }
+
+  .map__link {
+    height: 370px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    height: 500px;
+  }
+
+  .map__link {
+    height: 500px;
+  }
+}

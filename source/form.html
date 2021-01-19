@@ -2,133 +2,273 @@
 <html lang="ru">
 
 <head>
+  <link rel="stylesheet" href="css/style.css">
   <meta charset="utf-8">
   <title>Пинк</title>
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150px" height="100px"
-        alt="Приложение Пинк">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <a class="main-nav__logo" href="index.html">
+        <svg class="main-nav__logo-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px"
+          viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+          <g>
+            <path fill="#FFFFFF"
+              d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z" />
+            <path fill="#FFFFFF"
+              d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z" />
+            <path fill="#FFFFFF"
+              d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z" />
+            <path fill="#FFFFFF"
+              d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z" />
+          </g>
+        </svg>
+      </a>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span><svg
+          class="main-nav__open-toggle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px"
+          viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+          <g id="miu">
+            <g id="editor_list_view_hambuger_menu_glyph">
+              <g>
+                <path id="path-1" fill="#ffffff"
+                  d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z" />
+              </g>
+              <g>
+                <path id="path-1_1_" fill="#ffffff"
+                  d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z" />
+              </g>
+            </g>
+          </g>
+        </svg>
+        <svg class="main-nav__close-toggle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px"
+          viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+          <path fill="#FFFFFF"
+            d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z" />
+        </svg>
+      </button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="index.html">Главная</a>
+          <a class="main-nav__link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a href="photo.html">Фотографии</a>
+          <a class="main-nav__link" href="photo.html">Фотографии</a>
         </li>
         <li class="main-nav__item">
-          <a>Конкурс</a>
+          <a class="main-nav__link">Конкурс</a>
         </li>
         <li class="main-nav__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-main page-main--form">
     <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     <form class="form" action="https://echo.htmlacademy.ru" method="POST">
       <p class="form__desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
-        бонусную карту! Пожалуйста, заполни</p>
-      <fieldset class="form__fieldset form__fieldset--fullname">
-        <div class="form__input-group">
-          <label class="form__label-text" for="surname">Фамилия:</label>
-          <input class="form__input-text" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+        бонусную карту! <span>Пожалуйста, заполните форму ниже</span></p>
+      <div class="form__wrapper">
+        <div class="form__inner form__inner--fullname">
+          <fieldset class="form__fieldset form__fieldset--fullname">
+            <div class="form__input-group form__input-group--fullname">
+              <label class="form__label-text" for="surname">Фамилия:</label>
+              <input class="form__input-text" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+            </div>
+            <div class="form__input-group form__input-group--fullname">
+              <label class="form__label-text" for="name">Имя:</label>
+              <input class="form__input-text" type="text" name="name" id="name" placeholder="Введите ваше имя *">
+            </div>
+            <div class="form__input-group form__input-group--fullname">
+              <label class="form__label-text" for="patronymic">Отчество:</label>
+              <input class="form__input-text" type="text" name="patronymic" id="patronymic"
+                placeholder="Ну и отчество тоже">
+            </div>
+          </fieldset>
         </div>
-        <div class="form__input-group">
-          <label class="form__label-text" for="name">Имя:</label>
-          <input class="form__input-text" type="text" name="name" id="name" placeholder="Введите ваше имя *">
+
+        <div class="form__inner form__inner--achiv form__inner--gray">
+          <fieldset class="form__fieldset form__fieldset--achiv">
+            <legend class="form__legend form__legend--achiv">Ваши безбашенные<br> достижения в путешествии</legend>
+            <div class="form__checkbox-group">
+              <input class="visually-hidden" type="checkbox" name="shark" id="shark" checked>
+              <label class="form__check" for="shark">Сделал селфи с акулой</label>
+              <input class="visually-hidden" type="checkbox" name="beach" id="beach" checked>
+              <label class="form__check" for="beach">Обгорел на пляже</label>
+            </div>
+            <div class="form__checkbox-group">
+              <input class="visually-hidden" type="checkbox" name="norrice" id="norrice">
+              <label class="form__check" for="norrice">Видел Чака Норриса</label>
+              <input class="visually-hidden" type="checkbox" name="souvenirs" id="souvenirs">
+              <label class="form__check" for="souvenirs">Накупил сувениров</label>
+            </div>
+            <div class="form__checkbox-group">
+              <input class="visually-hidden" type="checkbox" name="tower" id="tower" checked>
+              <label class="form__check" for="tower">Удержал башню</label>
+              <input class="visually-hidden" type="checkbox" name="hotel" id="hotel">
+              <label class="form__check" for="hotel">Разгромил отель</label>
+            </div>
+          </fieldset>
         </div>
-        <div class="form__input-group">
-          <label class="form__label-text" for="patronymic">Отчество:</label>
-          <input class="form__input-text" type="text" name="patronymic" id="patronymic"
-            placeholder="Ну и отчество тоже">
+
+        <div class="form__inner form__inner--contacts">
+          <fieldset class="form__fieldset form__fieldset--contacts">
+            <legend class="form__legend form__legend--contacts">Контактная информация</legend>
+            <div class="form__input-group form__input-group--contacts">
+              <label class="form__label-text form__label-text--contacts" for="phone">Номер телефона</label>
+              <input class="form__input-text form__input-text--contacts" type="tel" name="phone" id="phone"
+                placeholder="Номер, пожалуйста">
+              <svg class="form__input-icon form__input-icon--phone" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.697px" height="19.696px"
+                viewBox="0 0 19.697 19.696" enable-background="new 0 0 19.697 19.696" xml:space="preserve">
+                <path fill="#FFFFFF"
+                  d="M9.848,0C6.34,0,2.823,0.628,1.546,1.878c-1.058,1.04-1.412,2.874-1.53,4.035c0,0-0.016,0.115-0.016,0.165 c0,0.454,0.369,0.82,0.819,0.82c0.054,0,2.028-0.161,3.218-0.259c0.029-0.004,0.058-0.008,0.086-0.017 C4.566,6.61,4.924,6.25,4.924,5.803l0.003-1.617c0-0.5,0.407-0.902,0.907-0.902h8.027c0.499,0,0.907,0.402,0.907,0.902l0.003,1.617 c0,0.447,0.356,0.808,0.802,0.82c0.027,0.009,0.056,0.013,0.085,0.017c1.19,0.098,3.164,0.259,3.217,0.259 c0.451,0,0.822-0.366,0.822-0.82c0-0.05-0.018-0.165-0.018-0.165c-0.118-1.161-0.472-2.995-1.53-4.035 C16.873,0.628,13.356,0,9.848,0z M9.848,10.67c-0.908,0-1.643,0.733-1.643,1.64c0,0.907,0.734,1.641,1.643,1.641 c0.906,0,1.641-0.733,1.641-1.641C11.488,11.404,10.754,10.67,9.848,10.67z M8.616,6.975V5.951c0-0.567-0.46-1.026-1.025-1.026 c-0.566,0-1.024,0.459-1.024,1.026v1.024l-5.537,5.913c-0.382,0.376-0.619,0.894-0.619,1.47v1.646c0,0.907,0.734,1.643,1.641,1.643 h0.411v1.023c0,0.568,0.46,1.026,1.026,1.026c0.565,0,1.024-0.458,1.024-1.026v-1.023h10.669v1.023c0,0.568,0.46,1.026,1.025,1.026 c0.567,0,1.026-0.458,1.026-1.026v-1.023h0.411c0.905,0,1.64-0.735,1.64-1.643v-1.646c0-0.576-0.236-1.094-0.618-1.47L13.13,6.975 V5.951c0-0.567-0.459-1.026-1.024-1.026c-0.567,0-1.027,0.459-1.027,1.026v1.024H8.616z M9.848,9.028 c1.814,0,3.282,1.468,3.282,3.282s-1.468,3.282-3.282,3.282c-1.813,0-3.281-1.468-3.281-3.282S8.034,9.028,9.848,9.028z" />
+              </svg>
+            </div>
+            <div class="form__input-group form__input-group--contacts">
+              <label class="form__label-text form__label-text--contacts" for="email">Адрес почты</label>
+              <input class="form__input-text form__input-text--contacts" type="email" name="email" id="email"
+                placeholder="Введите почту *">
+              <svg class="form__input-icon form__input-icon--email" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.988px" height="13.966px"
+                viewBox="0 0 17.988 13.966" enable-background="new 0 0 17.988 13.966" xml:space="preserve">
+                <g><g><g>
+                      <path fill="#FFFFFF"
+                        d="M14.914,1.814C16.111,0.816,15.816,0,14.257,0H3.731c-1.56,0-1.854,0.816-0.657,1.814l3.742,3.118 c1.197,0.998,3.158,0.998,4.355,0L14.914,1.814z" />
+                    </g><g>
+                      <path fill="#FFFFFF"
+                        d="M11.913,7.044C10.715,8.042,9.718,8.869,9.695,8.88c0,0,0,0-0.02,0.013 C9.601,8.949,9.523,8.995,9.44,9.029C9.407,9.044,9.374,9.063,9.34,9.077c-0.11,0.034-0.223,0.058-0.335,0.059 c-0.003,0-0.007,0.001-0.01,0.001c0,0,0,0-0.001,0s-0.001,0-0.001,0c-0.003,0-0.007-0.001-0.01-0.001 C8.87,9.134,8.759,9.111,8.648,9.077C8.614,9.063,8.58,9.044,8.548,9.029c-0.083-0.034-0.16-0.08-0.235-0.136C8.293,8.88,8.293,8.88,8.293,8.88c-0.022-0.012-1.02-0.838-2.218-1.836L2.178,3.796C0.979,2.798,0,3.257,0,4.816v6.315 c0,1.56,1.275,2.835,2.835,2.835h12.318c1.56,0,2.835-1.275,2.835-2.835V4.816c0-1.559-0.979-2.018-2.178-1.02L11.913,7.044z" />
+                </g></g></g>
+              </svg>
+            </div>
+          </fieldset>
         </div>
-      </fieldset>
-      <fieldset class="form__fieldset form__fieldset--achiv">
-        <legend class="form__legend form__legend--achiv">Ваши безбашенные достижения в путешествии</legend>
-        <div class="form__checkbox-group">
-          <input type="checkbox" name="shark" id="shark" checked>
-          <label class="form__check" for="shark">Сделал селфи с акулой</label>
-          <input type="checkbox" name="beach" id="beach" checked>
-          <label class="form__check" for="beach">Обгорел на пляже</label>
+
+        <div class="form__inner form__inner--application form__inner--gray">
+          <fieldset class="form__fieldset form__fieldset--application">
+            <legend class="form__legend form__legend--application">С каким приложением путешествовали?</legend>
+            <input class="visually-hidden" type="radio" name="application" id="ios" value="ios" checked>
+            <label class="form__check form__check--radio" for="ios">Pink для iOS</label>
+            <input class="visually-hidden" type="radio" name="application" id="android" value="android">
+            <label class="form__check form__check--radio" for="android">Pink на Android</label>
+            <input class="visually-hidden" type="radio" name="application" id="windows" value="windows">
+            <label class="form__check form__check--radio" for="windows">Windows Phone</label>
+          </fieldset>
         </div>
-        <div class="form__checkbox-group">
-          <input type="checkbox" name="norrice" id="norrice">
-          <label class="form__check" for="norrice">Видел Чака Норриса</label>
-          <input type="checkbox" name="souvenirs" id="souvenirs">
-          <label class="form__check" for="souvenirs">Накупил сувениров</label>
-        </div>
-        <div class="form__checkbox-group">
-          <input type="checkbox" name="tower" id="tower" checked>
-          <label class="form__check" for="tower">Удержал башню</label>
-          <input type="checkbox" name="hotel" id="hotel">
-          <label class="form__check" for="hotel">Разгромил отель</label>
-        </div>
-      </fieldset>
-      <fieldset class="form__fieldset form__fieldset--contacts">
-        <legend class="form__legend form__legend--contacts">Контактная информация</legend>
-        <div class="form__input-group form__input-group--contacts">
-          <input class="form__input-text form__input-text--contacts" type="tel" name="phone" id="phone"
-            placeholder="Номер, пожалуйста">
-          <label class="form__label-text" for="phone">Номер телефона</label>
-        </div>
-        <div class="form__input-group form__input-group--contacts">
-          <input class="form__input-text form__input-text--contacts" type="email" name="email" id="email"
-            placeholder="Введите почту *">
-          <label class="form__label-text" for="email">Адрес почты</label>
-        </div>
-      </fieldset>
-      <fieldset class="form__fieldset form__fieldset--application">
-        <legend class="form__legend form__legend--application">С каким приложением путешествовали?</legend>
-        <input type="radio" name="application" id="ios" value="ios" checked>
-        <label class="form__check form__check--radio" for="ios">Pink для iOS</label>
-        <input type="radio" name="application" id="android" value="android">
-        <label class="form__check form__check--radio" for="android">Pink на Android</label>
-        <input type="radio" name="application" id="windows" value="windows">
-        <label class="form__check form__check--radio" for="windows">Windows Phone</label>
-      </fieldset>
-      <fieldset class="form__fieldset form__fieldset--comment">
-        <legend class="form__legend form__legend--comment">Опишите свои эмоции</legend>
-        <textarea class="form__comment" name="comment"
-          placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-      </fieldset>
+      </div>
+
+      <div class="form__inner">
+        <fieldset class="form__fieldset form__fieldset--comment">
+          <legend class="form__legend form__legend--comment">Опишите свои эмоции</legend>
+          <textarea class="form__comment" name="comment"
+            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+      </div>
+
       <div class="form__submit-box">
         <button class="form__submit button" type="submit">Отправить форму</button>
-        <b class="form__prompt"><span class="form__star">*</span> — обязательные поля</b>
+        <b class="form__prompt"><span class="form__star">*</span> — обязательные <span>для заполнения</span> поля</b>
       </div>
     </form>
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo">
-      <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="150px" height="100px"
-        alt="Приложение Пинк">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375"
+          enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+          <g>
+            <path fill="#283645"
+              d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z" />
+            <path fill="#283645"
+              d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z" />
+            <path fill="#283645"
+              d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468 c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.225,0.58,1.225,1.256v20.349c0,0.677-0.48,1.19-1.158,1.19h-0.129 c-0.548,0-0.936-0.321-1.318-0.772l-13.976-17.867v17.449c0,0.677-0.547,1.257-1.257,1.257c-0.676,0-1.223-0.58-1.223-1.257V18.532 H102.744z" />
+            <path fill="#283645"
+              d="M128.173,18.5c0-0.708,0.58-1.288,1.257-1.288c0.708,0,1.286,0.58,1.286,1.288v12.331l12.848-13.16 c0.29-0.257,0.579-0.451,0.998-0.451c0.676,0,1.225,0.612,1.225,1.256c0,0.354-0.162,0.644-0.42,0.901l-7.984,7.92l8.564,10.561 c0.225,0.291,0.354,0.547,0.354,0.936c0,0.676-0.577,1.288-1.285,1.288c-0.482,0-0.807-0.259-1.03-0.58l-8.401-10.464l-4.863,4.861 v4.895c0,0.708-0.578,1.288-1.286,1.288c-0.677,0-1.257-0.58-1.257-1.288V18.5H128.173z" />
+          </g>
+          <path fill="#FFFFFF" d="M60.498,28.266" />
+          <path fill="#D22856"
+            d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531s-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z" />
+        </svg>
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в
+                Твиттере</span><svg class="social__link-icon" version="1.0" id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663"
+                xml:space="preserve">
+                <g id="W6EeEF_1_">
+                  <g>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z" />
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в
+                Фейсбуке</span><svg class="social__link-icon" version="1.0" id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944"
+                xml:space="preserve">
+                <path
+                  d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы в Ютубе</span><svg
+                class="social__link-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px"
+                viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+                <path
+                  d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано </b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
+            Academy</span><svg class="copyright__link-icon" version="1.0" id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09"
+            xml:space="preserve">
+            <path
+              d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z" />
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+
+  </script>
 </body>
 
 </html>

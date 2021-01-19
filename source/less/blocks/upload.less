@@ -1,0 +1,282 @@
+.upload {
+  padding-bottom: 40px;
+  background-color: @bg-gray;
+}
+
+.upload__link {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+}
+
+.upload__image {
+  display: block;
+}
+
+.upload__filters-list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 75px;
+}
+
+.upload__filters-item {
+  margin-right: 35px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.upload__filters-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+}
+
+.upload__filters-image {
+  fill: @bg-blue;
+  opacity: 0.3;
+  &:hover {
+    opacity: 0.5;
+  }
+  &--active {
+    fill: @pink;
+    opacity: 1;
+  }
+}
+
+.upload__range-controls {
+  display: none;
+  position: absolute;
+  bottom: 34px;
+  left: 20px;
+  width: 240px;
+  &--active {
+    display: block;
+  }
+}
+
+.upload__scale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 2px;
+  background-color: @bg-blue;
+}
+
+.upload__toggle {
+  position: absolute;
+  top: -6px;
+  right: 33px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid @pink;
+  border-radius: 50%;
+  background-color: @bg-gray;
+  &:active {
+    background-color: @pink;
+  }
+}
+
+.upload__gray-line {
+  height: 1px;
+  background-color: #dddfe0;
+}
+
+.upload__buttons {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.upload__button-item {
+  margin-bottom: 12px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .upload {
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+
+  .upload__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .upload__link {
+    width: 300px;
+    margin: 0;
+  }
+
+  .upload__tools {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+  }
+
+  .upload__filters-list {
+    display: block;
+    width: 100%;
+    margin-bottom: auto;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+
+  .upload__filters-item {
+    display: flex;
+    height: 45px;
+    margin: 0;
+    margin-bottom: 27px;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  }
+
+  .upload__filters-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 25px;
+    align-items: flex-start;
+  }
+
+  .upload__filters-image {
+    fill: @pink;
+    opacity: 1;
+    &--crop {
+      width: 22px;
+      height: 22px;
+    }
+    &--pour {
+      width: 24px;
+      height: 24px;
+    }
+    &--bright {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .upload__range-controls {
+    display: block;
+    position: relative;
+    width: 202px;
+    bottom: auto;
+    left: auto;
+  }
+
+  .upload__scale {
+    width: 202px;
+    top: auto;
+    bottom: 34px;
+  }
+
+  .upload__toggle {
+    top: auto;
+    bottom: 28px;
+    &--crop {
+      left: 145px;
+    }
+    &--pour {
+      left: 25px;
+    }
+    &--bright {
+      left: 95px;
+    }
+  }
+
+  .upload__gray-line {
+    display: none;
+  }
+
+  .upload__buttons {
+    width: 260px;
+    margin: 0;
+  }
+
+  .upload__button-item {
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .upload {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 57px;
+    padding-bottom: 57px;
+  }
+
+  .upload__wrapper {
+    width: auto;
+    margin-left: 80px;
+    margin-right: 60px;
+  }
+
+  .upload__tools {
+    width: 410px;
+  }
+
+  .upload__filters-list {
+    padding-top: 0;
+  }
+
+  .upload__filters-item {
+    height: 57px;
+    margin-bottom: 15px;
+  }
+
+  .upload__filters-icon {
+    width: 44px;
+    margin-right: 50px;
+  }
+
+  .upload__filters-image {
+    width: initial;
+    height: initial;
+  }
+
+  .upload__range-controls {
+    width: 288px;
+  }
+
+  .upload__scale {
+    width: 288px;
+  }
+
+  .upload__toggle {
+    &--crop {
+      left: 70px;
+    }
+    &--pour {
+      left: 245px;
+    }
+    &--bright {
+      left: 160px;
+    }
+  }
+
+  .upload__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+
+  .upload__button-item {
+    width: 180px;
+    margin-bottom: 0;
+  }
+}

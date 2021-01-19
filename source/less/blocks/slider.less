@@ -1,0 +1,31 @@
+.slider__toggles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+  height: 12px;
+  margin: 0 auto;
+}
+
+.slider__toggle {
+  .no-indents();
+  width: 6px;
+  height: 6px;
+  font-size: 0;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: rgba(40, 54, 69, 0.3);
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+  &:active {
+    background-color: rgba(40, 54, 69, 0.1);
+  }
+  &--active {
+    border: 3px solid @bg-blue;
+    background-color: #ffffff;
+    box-sizing: content-box;
+  }
+}

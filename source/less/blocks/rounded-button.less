@@ -1,0 +1,51 @@
+.rounded-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  .font-props( 18px, 18px, 700);
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid #ffffff;
+  border-radius: 27px;
+  box-sizing: border-box;
+}
+
+.rounded-button--download {
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: transparent;
+  &:hover {
+    color: @pink;
+    background-color: #ffffff;
+  }
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+    background-color: #ffffff;
+  }
+}
+
+.rounded-button--post {
+  color: @pink;
+  border-color: @pink;
+  &:hover {
+    color: #ffffff;
+    background-color: @pink;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.rounded-button--cancel {
+  color: @bg-blue;
+  border-color: @bg-blue;
+  opacity: 0.1;
+  &:hover {
+    opacity: 0.3;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @bg-blue;
+    opacity: 0.3;
+  }
+}

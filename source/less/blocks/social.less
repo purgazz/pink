@@ -1,0 +1,37 @@
+.social {
+  width: 178px;
+  height: 51px;
+  margin: 0 auto;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  .reset-list();
+}
+
+.social__item {
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+  &:hover {
+    border-color: rgba(40, 54, 69, 1);
+  }
+  &:active {
+    border-color: rgba(40, 54, 69, 0.1);
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__link-icon path {
+  fill: @pink;
+}
