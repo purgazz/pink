@@ -18,15 +18,16 @@
   cursor: pointer;
 }
 
+.page-footer__logo-desktop {
+  display: none;
+}
+
 .page-footer__logo:hover path {
   fill: @pink;
 }
 
 .page-footer__logo:active {
   opacity: 0.3;
-  & g path{
-    fill: @bg-blue;
-  }
 }
 
 .page-footer__social {
@@ -76,6 +77,14 @@
 
   .page-footer__logo {
     margin-top: 70px;
+  }
+
+  .page-footer__logo-mobile {
+    display: none;
+  }
+
+  .page-footer__logo-desktop {
+    display: inline-block;
   }
 
   .page-footer__social {
