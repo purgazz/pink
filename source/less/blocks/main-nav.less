@@ -12,6 +12,19 @@
   cursor: pointer;
 }
 
+.main-nav__logo-image {
+  width: 75px;
+  height: 23px;
+}
+
+.main-nav__logo-tablet {
+  display: none;
+}
+
+.main-nav__logo-desktop {
+  display: none;
+}
+
 .main-nav__logo-image:hover path {
   fill: @pink;
 }
@@ -34,13 +47,20 @@
   border: none;
   cursor: pointer;
   outline: none;
-  &:hover path {
+  &:hover .main-nav__open-toggle,
+  &:hover .main-nav__close-toggle {
     fill: @pink;
   }
-  &:active path {
+  &:active .main-nav__open-toggle,
+  &:active .main-nav__close-toggle {
     fill: @pink;
     opacity: 0.3;
   }
+}
+
+.main-nav__open-toggle,
+.main-nav__close-toggle {
+  fill: #ffffff;
 }
 
 .main-nav__toggle svg {
@@ -108,6 +128,14 @@
     height: 40px;
   }
 
+  .main-nav__logo-mobile {
+    display: none;
+  }
+
+  .main-nav__logo-tablet {
+    display: inline-block;
+  }
+
   .main-nav__toggle {
     top: 40px;
     right: 3%;
@@ -160,7 +188,14 @@
     padding-right: 0;
     border: none;
     background-color: transparent;
+  }
 
+  .main-nav__logo-tablet {
+    display: none;
+  }
+
+  .main-nav__logo-desktop {
+    display: inline-block;
   }
 
   .main-nav__list {
